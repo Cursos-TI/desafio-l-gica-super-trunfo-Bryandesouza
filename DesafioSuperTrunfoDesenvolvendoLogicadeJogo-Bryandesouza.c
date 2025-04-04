@@ -15,6 +15,7 @@ int main() {
     double pibPerCapita1, pibPerCapita2; // PIB per capita
 
     // Entrada de dados para a primeira carta
+    
     printf("Informe o estado da primeira carta (A-H): ");
     scanf(" %c", &estado1); // Espaço antes de %c evita problemas com buffer
 
@@ -57,13 +58,17 @@ int main() {
 
     printf("Informe o número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos2);
+    
     // Calculo da densidade populacional e PIB per capita
+    
     densidade1 = (float)populacao1 / area1;
     densidade2 = (float)populacao2 / area2;
+    
     pibPerCapita1 = (pib1 * 1e9) / (double) populacao1;
     pibPerCapita2 = (pib2 * 1e9) / (double) populacao2;
 
     // Exibição dos dados da carta 1
+    
     printf("\nDados da primeira carta:\n");
     printf("Estado: %c\n", estado1);
     printf("Código da carta: %s\n", codigoCarta1);
@@ -76,6 +81,7 @@ int main() {
     printf("PIB per capita: %.2lf\n", pibPerCapita1);
 
     // Exibição dos dados da carta 2
+    
     printf("\nDados da segunda carta:\n");
     printf("Estado: %c\n", estado2);
     printf("Código da carta: %s\n", codigoCarta2);
